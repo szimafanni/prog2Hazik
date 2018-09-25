@@ -1,0 +1,53 @@
+public class Main {
+    public static void main(String[] args) {
+        Pont p1= new Pont(15,10);
+        Pont p2= new Pont(25,12);
+        Pont p3= new Pont(35,34);
+        Pont p4= new Pont(45,25);
+        
+        System.out.println(p1 +", y koordináta:  " +p1.getKoord2());
+        System.out.println(p2 +" y koordináta: "+p2.getKoord2());
+        System.out.println("x koordináta: " +p3.getKoord1()+" "+p3 );
+        System.out.println("x koordináta: " +p4.getKoord1()+" "+p4 );
+        
+                
+        
+    }
+}
+
+public class Pont {
+    private double koord1;
+    private double koord2;
+
+    public Pont(double koord1, double koord2) {
+        this.koord1 = koord1;
+        this.koord2 = koord2;
+    }
+
+    public Pont() {
+    }
+    
+    
+
+    public double getKoord1() {
+        return koord1=this.koord1-3.4;
+    }
+
+    public void setKoord1(double koord1) {
+        this.koord1 = koord1;
+    }
+
+    public double getKoord2() {
+        return koord2=this.koord2+5;
+    }
+
+    public void setKoord2(double koord2) {
+        this.koord2 = koord2;
+    }
+
+    @Override
+    public String toString() {
+        return "Pont{" + "koord1=" + koord1 + ", koord2=" + koord2 + '}';
+    }
+        
+}
