@@ -1,0 +1,37 @@
+public class Pont {
+    private double koord1;
+    private double koord2;
+
+    public Pont(double koord1, double koord2) {
+        this.koord1 = koord1;
+        this.koord2 = koord2;
+    }
+
+    public Pont() {
+    }
+    
+    public double getKoord1() {
+        return koord1=this.koord1-3.4;
+    }
+
+    public void setKoord1(double koord1) {
+        this.koord1 = koord1;
+    }
+
+    public double getKoord2() {
+        return koord2=this.koord2+5;
+    }
+
+    public void setKoord2(double koord2) {
+        this.koord2 = koord2;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "Pont{" + "koord1=" + koord1 + ", koord2=" + koord2 + '}';
+    }
+
+    
+}
