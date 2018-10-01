@@ -135,7 +135,37 @@ public class Main {
          }
          return szam;
          
-         
+       public static int tizenharom(int n){
+       int a=1;
+       int b=0;
+       for(int k=1;;k++){
+       if(b>n){
+       return b;
+       }
+       b=a+b;
+       a=b-a;
+       }
+       }
+       
+	 
+	public static void tinennegy() {
+	for(int i=1;i<100;i++){
+	int a=i;
+	int maradek, osz=0;
+	
+	while(a!0){
+	maradek=a%10;
+	a=a/10;
+	osz=maradek*maradek*maradek+osz;
+	}
+	if(osz==i)
+	System.out.println(i+" ");
+		}
+	   }
+	}
+	 
+	 
+	 
      }
 
    public static void main(String[] args) {
