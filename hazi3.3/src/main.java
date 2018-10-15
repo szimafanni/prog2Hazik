@@ -63,7 +63,7 @@ public class main {
         for (int i = 0; i < n; i++) {
             sor = sc.nextLine();
             s = sor.split(";");
-            buda[i] = new Budapest((s[0]), (s[1]), (s[2]), Integer.parseInt(s[4]), s[5]);
+                buda[i] = new Budapest((Integer.parseInt(s[0])), Integer.parseInt(s[1]), Integer.parseInt(s[2]), (s[3]), Integer.parseInt(s[4]));
         }
 
         System.out.println("\n");
